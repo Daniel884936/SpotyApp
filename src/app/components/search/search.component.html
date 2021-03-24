@@ -1,0 +1,9 @@
+
+<div class="row animated fadeIn fast">
+  <div class="col">
+    <input #search class="form-control" (keyup)="searchArtist(search.value)" placeholder="Search..." type="text" name="" id="">
+  </div>
+</div>
+
+  <app-card [items] = "artists" ></app-card>
+

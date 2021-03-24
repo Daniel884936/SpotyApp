@@ -1,0 +1,19 @@
+
+
+  <div class="row row-cols-1 mt-5 row-cols-md-3  row-cols-lg-4 ">
+
+  <div class="col mb-4" *ngFor="let item of items">
+    <div class="card h-100 bg-dark pointer"  (click)="showArtist(item)">
+      <img [src]="item.images | noImages" class="card-img-top" alt="...">
+      <div class="card-body" >
+        <h5 class="card-title text-light">{{item.name}}</h5>
+
+        <div  *ngIf="item.artists">
+          <span *ngFor="let artisc of item.artists"  class="badge badge-pill badge-primary  " style="background-color: #1DB954;">{{artisc.name}}</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>

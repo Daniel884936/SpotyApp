@@ -1,0 +1,13 @@
+
+<app-loading *ngIf="loading" class="animated fadeIn"></app-loading>
+
+<div class="alert animated fadeIn" *ngIf="error" style="background-color: red; color: white;" >
+  <h3>
+    Error
+  </h3>
+  <p>{{errorMessage}}</p>
+</div>
+
+    <app-card [items] = "newRealeases"></app-card>
+
+
